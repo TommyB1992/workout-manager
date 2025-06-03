@@ -1,5 +1,9 @@
 # 🏋️‍♂️ Workout Manager
-![Anteprima dell'app](preview.png)
+
+<p align="center">
+  <img src="preview.png" alt="Anteprima dell'app" width="600">
+</p>
+
 Workout Manager è un'applicazione web semplice e modulare per la gestione degli allenamenti, sviluppata in PHP con MySQL, HTML, CSS e JavaScript.
 
 ## 🚀 Funzionalità
