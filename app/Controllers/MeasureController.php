@@ -17,7 +17,7 @@ class MeasureController {
             'measures' => $measures,
             'groups'   => $groups,
         ]);
-        View::renderPartial('Measure/index');
+        View::render('Measure/index');
     }
 
     public function create(): void {

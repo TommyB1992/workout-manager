@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Manager</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <nav class="u-pull-right">
+          <ul>
+            <li><a href="./wrapper.html">Workout</a></li>
+            <li><a href="./esercizi.html">Esercizi</a></li>
+            <li><a href="./misurazioni">Misurazioni</a>
+              <ul>
+                <li><a href="./lista-misurazioni.html">Lista</a></li>
+                <li><a href="./gestione-misurazioni.html">Gestione</a></li>
+              </ul>
+            </li>
+            <li><a href="#muscoli">Muscoli</a>
+              <ul>
+                <li><a href="./lista-muscoli.html">Lista</a></li>
+                <li><a href="./associa-muscoli.html">Associa</a></li>
+              </ul>
+            </li>
+            <li><a href="./modelli.html">Modelli d'Allenamento</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Gestione Modelli d'Allenamento!</h1>
+
+        <!-- Tabella degli Esercizi -->
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Azione</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Circonferenze -->
+    <tr>
+      <td colspan="2"><strong>Circonferenze</strong></td>
+    </tr>
+    <tr>
+      <td>Bicipite SX</td>
+      <td>34 cm</td>
+    </tr>
+    <tr>
+      <td>Addome</td>
+      <td>85 cm</td>
+    </tr>
+    <tr>
+      <td>Coscia DX</td>
+      <td>55 cm</td>
+    </tr>
+
+    <!-- Macro -->
+    <tr>
+      <td colspan="2"><strong>Macro</strong></td>
+    </tr>
+    <tr>
+      <td>PROT</td>
+      <td>140 g</td>
+    </tr>
+    <tr>
+      <td>FAT</td>
+      <td>60 g</td>
+    </tr>
+    <tr>
+      <td>CHO</td>
+      <td>220 g</td>
+    </tr>
+
+    <!-- Singola voce -->
+    <tr>
+      <td colspan="2"><strong>Altro</strong></td>
+    </tr>
+    <tr>
+      <td>Kcal</td>
+      <td>2400</td>
+    </tr>
+  </tbody>
+</table>
+
+
+        
+        <div class="row">
+            <div class="six columns">
+                <h3>Crea nuovo gruppo</h3>
+                <form method="post" action="/exercise/create" class="exercise-form">
+                  <input type="text" name="name" id="exercise-name" placeholder="Inserisci il nome" required>
+                  <input type="submit" value="Aggiungi" class="button-primary">
+                </form>
+            </div>
+            
+            <div class="six columns">
+                <h3>Crea nuova misurazione</h3>
+                <form method="post" action="/exercise/create" class="exercise-form">
+                  <input type="text" name="name" id="exercise-name" placeholder="Inserisci il nome" required>
+              <label for="exampleRecipientInput">File</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+                  
+                  <input type="submit" value="Aggiungi" class="button-primary">
+                </form>
+
+            </div>
+        </div>
+        
+        
+
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <p>&copy; 2025 Workout Manager - Tutti i diritti riservati</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

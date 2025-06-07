@@ -20,7 +20,8 @@ class WorkoutController {
             'start_date'    => $start_date,
             'microcycle'    => $microcycle
         ]);
-        View::renderPartial('Workout/date_form');
+        //View::renderPartial('Workout/date_form');
+        View::render('Workout/date_form');
 
         if ($start_date) {
             if (!DateTimeHelper::validateDate($start_date)) {

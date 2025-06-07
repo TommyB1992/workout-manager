@@ -1,0 +1,290 @@
+/* Generale */
+/*body {
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-top: 60px;
+}*/
+
+/* Navbar: Stile minimalista e moderno */
+/*header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  height: 25px; 
+}*/
+
+/*nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 25px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: #2d87f0;
+  color: #fff;
+}*/
+
+/* Dropdown menu */
+/*nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 80px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li {
+  padding: 5px 10px;
+}
+
+nav ul li ul li a {
+  font-weight: 400;
+  padding: 8px 0;
+  transition: background-color 0.2s;
+}
+
+nav ul li ul li a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Main content: Spazio sopra per evitare che il menu lo copra */
+/*main {
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+*/
+
+header, footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  z-index: 1000;
+}
+
+header {
+  top: 0;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+}
+
+footer {
+  bottom: 0;
+  text-align: right;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* Navbar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  position: relative;
+  margin-left: 25px;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 100px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul > li.has-submenu::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Colori mancanti per i bottoni di skeleton */
+.button-success,
+.button-success:focus,
+.button-success:active {
+  color: #fff;
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+.button-success:hover {
+  color: #fff;
+  background-color: #239d56;
+  border-color: #239d56;
+}
+.button-info,
+.button-info:focus,
+.button-info:active {
+  color: #fff;
+  background-color: #3498db;
+  border-color: #3498db;
+}
+.button-info:hover {
+  color: #fff;
+  background-color: #258bcf;
+  border-color: #258bcf;
+}
+.button-warning,
+.button-warning:focus,
+.button-warning:active {
+  color: #fff;
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+.button-warning:hover {
+  color: #fff;
+  background-color: #e08e0b;
+  border-color: #e08e0b;
+}
+.button-danger,
+.button-danger:focus,
+.button-danger:active {
+  color: #fff;
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+.button-danger:hover {
+  color: #fff;
+  background-color: #ad3327;
+  border-color: #ad3327;
+}
+.button.button-block {
+  width: 100%;
+}
+
+/* Aggiungiamo bottoni di dimensioni differenti */
+.button-small {
+    height: 25.333px;
+    font-size: 7.333px;
+    padding: 0 20px;
+    line-height: 25.333px;
+}
+
+.button-large {
+    height: 50.667px;
+    font-size: 14.667px;
+    padding: 0 40px;
+    line-height: 50.667px;
+}
+
+/* Stile per bottoni ed elementi del form più moderno */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  border-radius: 1px;
+}
+
+
+.ex-button-small {
+  font-size: 12px;  /* Riduce la dimensione del testo */
+  padding: 4px 8px; /* Riduce il padding (top/bottom e left/right) */
+  line-height: 1.2; /* Riduce l'altezza della linea per una forma più compatta */
+  height: auto;     /* Impedisce che venga imposta un'altezza fissa */
+  min-width: 0;     /* Assicura che il pulsante si adatti al contenuto */
+  margin: 0;
+}
+
+
+/* Form per creazione esercizio */
+/*.exercise-form {
+  margin-top: 40px;
+}
+
+.exercise-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+*/
+
+
+
+/*
+
+TODO:
+  - navbar
+  - footer
+  - tabelle (https://adminlte.io/themes/v3/pages/tables/simple.html)
+  - datatables
+  - toast (https://adminlte.io/themes/v3/pages/UI/modals.html)
+  - modals
+  - messaggi di errore statici/alerts (https://adminlte.io/themes/v3/pages/UI/general.html)
+  - application button (https://adminlte.io/themes/v3/pages/UI/buttons.html)
+  - grafico a torta
+  - grafico lineare
+  - icone in svg (https://adminlte.io/themes/v3/pages/examples/projects.html)
+  - cards (https://adminlte.io/themes/v3/pages/widgets.html)
+  - error 404/500
+  
+  - grafica tipo questa: https://adminlte.io/themes/v3/pages/layout/top-nav.html
+*/

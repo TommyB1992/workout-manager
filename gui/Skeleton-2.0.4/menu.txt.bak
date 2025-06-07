@@ -1,0 +1,43 @@
+exercise (esercizi):
+    index: mostra lista esercizi e il form per inserirne uno nuovo
+    show: mostra form per l'update
+
+
+measure (misurazioni):
+    index: mostra gruppi delle misurazioni (es. Circonferenze) e i le misurazioni (es. Bicipite Sx, Addome, ...) + il form per la creazione di gruppi o misurazione
+    show: mostra il form per la modifica della misurazione
+
+measure-group (gruppo misurazioni):
+    show: mostra il form per la modifica del gruppo della misurazione
+    
+measure-value (valore della misurazione):
+    index: mostra il form per la ricerca, per la creazione e la tabella con i dati e il grafico con le variabili selezionate
+    
+muscle (muscoli):
+    index: lista muscoli + form creazione
+    show: mostra form per la modifica del muscolo
+
+muscle-worked (associa esercizio/muscoli per i muscoli lavorati):
+    index: mostra tutti + form per la creazione
+
+training-method (EMOM/Bill starr/...):
+    index: mostra tutti + form creazione
+    show: mostra form per modifica
+
+
+workout-controller ():
+    index: form inizio data + microciclo, lista esercizi per quel micro-ciclo + report sets/reps/tonnellaggio
+    show: mostra l'esercizio con il form per aggiungere togliere ripetizioni
+    
+    
+    
+Dovrei avere un menu in alto a destra con:
+[x]  - Esercizi
+[ ]  - Misurazioni
+[ ]      - Lista
+[ ]      - Gestione
+[ ]  - Muscoli
+[ ]      - Lista
+[ ]      - Associa
+[x]  - Modelli d'Allenamento
+[ ]  - Workout  

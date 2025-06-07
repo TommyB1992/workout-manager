@@ -37,19 +37,19 @@ class View {
         ViewVars::set($key, $value, $sanitize);
     }
 
-    public static function render(string $view, array $params = [], string $layout = 'layout'): void {
+    public static function render(string $view, array $params = [], string $wrapper = 'wrapper'): void {
         $globals = ViewVars::$vars ?? [];
         extract($globals);
         extract($params);
 
         $viewPath = __DIR__ . '/../Views/' . $view . '.php';
-        $layoutPath = __DIR__ . '/../Views/' . $layout . '.php';
+        $wrapperPath = __DIR__ . '/../Views/' . $wrapper . '.php';
 
         ob_start();
         require $viewPath;
         $content = ob_get_clean();
 
-        require $layoutPath;
+        require $wrapperPath;
     }
 
     public static function renderPartial(string $view, array $params = []): void {
