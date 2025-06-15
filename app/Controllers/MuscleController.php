@@ -8,11 +8,12 @@ use App\Helpers\CommonHelper;
 use App\Helpers\HtmlHelper;
 
 
-class MuscleController {
+class MuscleController extends Controller {
     public function index(): void {
         $muscles = Muscle::getAll();
-        print_r($muscles);
-        View::renderPartial('Muscle/create');
+        View::render('Muscle/index', [
+            'muscles' => $muscles
+        ]);
     }
 
     public function create(): void {
@@ -41,7 +42,7 @@ class MuscleController {
         }
 
         View::setGlobal($muscle);
-        View::renderPartial('Muscle/show');
+        View::render('Muscle/show');
     }
 
     public function update(): void {

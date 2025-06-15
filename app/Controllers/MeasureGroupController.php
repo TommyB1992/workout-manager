@@ -7,7 +7,7 @@ use App\Models\MeasureGroup;
 use App\Helpers\CommonHelper;
 use App\Helpers\HtmlHelper;
 
-class MeasureGroupController {
+class MeasureGroupController extends Controller {
     public function create(): void {
         $name = HtmlHelper::getNameInput();
 
@@ -24,7 +24,7 @@ class MeasureGroupController {
         }
 
         View::setGlobal($group);
-        View::renderPartial('MeasureGroup/show');
+        View::render('MeasureGroup/show');
     }
 
     public function update(): void {

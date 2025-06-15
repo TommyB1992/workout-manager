@@ -8,7 +8,7 @@ use App\Models\MeasureGroup;
 use App\Helpers\CommonHelper;
 use App\Helpers\HtmlHelper;
 
-class MeasureController {
+class MeasureController extends Controller {
     public function index(): void {
         $measures = Measure::getAll();
         $groups = MeasureGroup::getAll();
@@ -40,7 +40,7 @@ class MeasureController {
             'measure'   => $measure,
             'groups'    => MeasureGroup::getAll(),
         ]);
-        View::renderPartial('Measure/show');
+        View::render('Measure/show');
     }
 
     public function update(): void {
@@ -73,7 +73,7 @@ class MeasureController {
         ?int    $group_id,
         ?array  $existingMeasure = null
     ): void {
-        if (CommonHelper::isValidName($name)) {
+        if (!CommonHelper::isValidName($name)) {
             exit('Lunghezza misura troppo corta');
         }
     
