@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     </tr>
                 </table>
             `;
-            // puoi aggiungere qui il rendering dinamico dei risultati
         })
         .catch(error => {
             console.error("Errore:", error);
